@@ -5,11 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animasi Fotosintesis</title>
     <style>
-        body { margin: 0; overflow: hidden; }
-        canvas { display: block; }
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            background-color: #87CEEB; /* Warna latar belakang halaman */
+        }
+        canvas { 
+            display: block; 
+        }
+
+        /* Tambahkan CSS ini untuk judul */
+        .main-title {
+            position: absolute; /* Membuat tulisan melayang di atas konten lain */
+            top: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            
+            /* Gaya untuk tulisan besar */
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 5.5em; /* Ukuran font besar */
+            font-weight: bold;
+            color: white;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); /* Bayangan agar mudah dibaca */
+
+            /* Penting: agar tulisan tidak bisa di-klik dan tidak mengganggu kontrol 3D */
+            pointer-events: none;
+            
+            /* Background transparan (ini adalah default, jadi tidak wajib ditulis) */
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
+    <div class="main-title">Proses Fotosintesis</div>
+
     <script type="module" src="./main.js"></script>
 </body>
 </html>

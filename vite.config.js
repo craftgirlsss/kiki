@@ -8,6 +8,6 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/threejs/', // Sesuaikan dengan nama subfolder Anda
+  base: '/kelompoktiga/', // Sesuaikan dengan nama subfolder Anda
   // ... konfigurasi Vite lainnya
 });
